@@ -1,9 +1,9 @@
 1)
 Git — це
-✅ Збереження історії змін коду
-✅ СпСпівпраці команди над одним проєктом
-✅ РРоботи з іншими версіями проекту
-✅Захист від втрати даних
+✅ Saving the history of code changes
+✅ Team cooperation on one project
+✅ Work with other versions of the project
+✅ Data loss protection
 
 Git широко використовувався в розробці програмного забезпечення, особливо для спільної роботи на платформах, таких як GitHub, GitLab, Bitbucket .
 Основні дії та команди в Git
