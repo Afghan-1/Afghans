@@ -5,18 +5,18 @@
 1\. В ОС Linux для підключення периферійних пристроїв використовуються механізми ядра, драйвери пристроїв та файлові системи. Основні етапи підключення флешки та принтера:
 
 **Флешка**  
-Визначається ядром Linux як блоковий пристрій (наприклад, /dev/sdb).  
-Необхідно змонтувати файлову систему флешки у певний каталог (наприклад, /mnt/usb).  
-Після цього можна виконувати операції читання та запису файлів.
+It is recognized by the Linux kernel as a block device (e.g., /dev/sdb).
+The file system of the flash drive needs to be mounted to a specific directory (e.g., /mnt/usb).
+After that, file read and write operations can be performed.
 
-**Монтування** – це процес підключення файлової системи пристрою до директорії в основній файловій системі. Linux сприймає всі пристрої як файли у директорії /dev. Щоб мати змогу працювати з файлами на флешці, її потрібно "підключити" до певного місця у файловій системі.
+**Монтування** – This is the process of connecting a device's file system to a directory in the main file system. Linux treats all devices as files in the /dev directory. To be able to work with files on a flash drive, it needs to be "mounted" to a specific location in the file system.
 
 Як це працює?
 
-* Визначаємо назву пристрою командою: lsblk  
-* Створюємо точку монтування: sudo mkdir \-p /mnt/usb  
-* Монтуємо флешку: sudo mount /dev/sdb1 /mnt/usb  
-* Розмонтування перед відключенням: sudo umount /mnt/usb
+* Identify the device name using the command: lsblk
+* Create a mount point: sudo mkdir -p /mnt/usb 
+* Mount the flash drive: sudo mount /dev/sdb1 /mnt/usb
+* Unmount before disconnecting: sudo umount /mnt/usb
 
 Різниця у роботі з периферією між Linux і Windows
 
